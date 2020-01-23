@@ -4,10 +4,27 @@ title:
 subtitle: HTML as program
 use-site-title: true
 ---
-<script src="https://b3008.github.io/executable_HTML/dist/polymer-paper.js" type="module"></script>
+<script src="https://b3008.github.io/executable_HTML/dist/paper-polymer.js" type="module"></script>
 <script src="https://b3008.github.io/executable_HTML/dist/aaCustomElements.js" type="module"></script>
 
-<link rel="import" href="https://b3008.github.io/executable_HTML/src/demos/demo1/demo1.html">
+        <aa-session>
+            <template>
+                <aa-sequence class="democontainer" type="elements">
+                    <aa-function-random min="1" max="2" name="rnd"></aa-function-random>
+                    <aa-choose>
+                        <aa-when test="rnd==1">
+                            m​
+                        </aa-when>
+                        <aa-otherwise>
+                            n​
+                        </aa-otherwise>
+                    </aa-choose>
+
+
+                    <aa-jump goto="rnd"></aa-jump>
+                </aa-sequence>
+            </template>
+        </aa-session>
 
 <div>
 
