@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: executable HTML 
+title: Executable HTML 
 
 # Short description of your site
 description: A set of custom HTML elements for writing programs with HTML
@@ -28,7 +28,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/executableHTML_logo.svg"
+avatar: "https://b3008.github.io/executable_HTML/executableHTML_logo.svg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
