@@ -4,7 +4,12 @@ title:
 subtitle: HTML as program
 use-site-title: true
 ---
+<script src="https://b3008.github.io/executable_HTML/dist/polymer-paper.js" type="module"></script>
+<script src="https://b3008.github.io/executable_HTML/dist/aaCustomElements.js" type="module"></script>
 
+<div>
+
+</div>
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
@@ -38,7 +43,7 @@ use-site-title: true
         {% endif %}
       </div>
     </div>
-
+''
     {% if post.tags.size > 0 %}
     <div class="blog-tags">
       Tags:
