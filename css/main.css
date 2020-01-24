@@ -169,7 +169,7 @@ img {
 .navbar-custom .avatar-container {
   position: absolute;
   left: 50%;
-  width: 50px;
+  width: 150px;
   margin-top: -25px;
 }
 .navbar-custom .avatar-container .avatar-img-border {
@@ -189,8 +189,8 @@ img {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
-    width: 100px;
-    margin-top: -60px;
+    width: 250px;
+    /* margin-top: -60px; */
   }
 
   .navbar-custom .avatar-container .avatar-img-border {
@@ -506,7 +506,7 @@ footer .theme-by {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 160px;
   }
   .intro-header.big-img {
     margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
