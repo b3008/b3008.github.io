@@ -8,22 +8,7 @@ use-site-title: false
 <script src="https://b3008.github.io/executable_HTML/dist/aaCustomElements.js" type="module"></script>
 
 
-<aa-session>
-  <template>
 
-<aa-sequence>
-
-
-executable HTML is a set of custom elements, 
-which help the author of HTML content prescribe
-the way pieces of HTML are inserted into the document, 
-without necessitating the use of JavaScript by the author.
-
-</aa-sequence>
-
-
-<section id="FirstExample">
-    <aa-sequence>
 
 <p style="margin-top:20px">
   This example uses <a href="https://link.springer.com/article/10.3758/s13428-018-1148-y">executable HTML</a> to replicate the famous Commodore 64 BASIC oneliner: <pre>10 PRINT CHR$(205.5+RND(1)); : GOTO 10</pre>
@@ -35,13 +20,13 @@ without necessitating the use of JavaScript by the author.
   Done in executable HTML, this could be written as:
   <pre>
   &lt;aa-sequence&gt;
-      &lt;aa-function-random min="1" max="2" name="rnd"&gt;&lt;/aa-function-random&gt;
+      &lt;aa-function-random min="1" max="2" name="rnd"&gt;&lt;aa-function-random&gt;
       &lt;aa-choose&gt;
-          &lt;aa-when test="rnd==1">m​&lt;/aa-when&gt;
-          &lt;aa-otherwise&gt;n​&lt;/aa-otherwise&gt;
+          &lt;aa-when test="rnd==1">m​&lt;aa-when&gt;
+          &lt;aa-otherwise>n​&lt;aa-otherwise&gt;
       &lt;aa-choose&gt;
-      &lt;aa-jump goto="rnd"&gt;&lt;/aa-jump&gt;
-  &lt;/aa-sequence&gt;
+      &lt;aa-jump goto="rnd">&lt;aa-jump&gt;
+  &lt;aa-sequence&gt;
 </pre>
 
   The following CodePen demonstrates it running:
@@ -53,40 +38,6 @@ without necessitating the use of JavaScript by the author.
     on <a href="https://codepen.io">CodePen</a>.</span>
   </p>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-      
-</aa-sequence>
-
-</section>
-
-
-<section id="SecondExample">
-
-  <p style="margin-top:20px">
-    This example illustrates how a possible part of a questionnaire could be made, including the generation of a random value, the choice of a screen to present to
-    the user based on that, and a "thank you" screen as a final step in the sequence.
-  </p>
-  
-
-  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="b3008" data-slug-hash="jObNKwx" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="questionnaireDemo">
-    <span>See the Pen <a href="https://codepen.io/b3008/pen/jObNKwx">
-    questionnaireDemo</a> by b3008 (<a href="https://codepen.io/b3008">@b3008</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-
-</section>
-</template>
-</aa-session>
-
-
-
-
 
 
 <p>The repository for executable HTML can be found at <a href="https://github.com/b3008/executable_HTML">https://github.com/b3008/executable_HTML</a></p>
